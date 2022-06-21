@@ -10,6 +10,3 @@ n2 = input('Введите второе число: ')
 sum = float(reverse_n(n1,'\nПервое число '))
 sum += float(reverse_n(n2,'Второе число '))
 print('Cумма: ',sum)
-
-
-
