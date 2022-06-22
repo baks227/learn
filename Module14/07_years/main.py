@@ -1,5 +1,5 @@
 # ЗАдача 7
-def search():
+def search_year():
   j,k,a = 0,0,''
 
   y1 = int(input('Введите первый год: '))
