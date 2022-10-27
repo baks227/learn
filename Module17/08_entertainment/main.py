@@ -5,6 +5,6 @@ for i in range(1,int(input('Количество бросков: ')) +1):
     for j in range(int(input('. Сбиты палки с номера '))-1,int(input('по номер: '))):
         palki[j] = '.'
 
-print('Результат:',end='')
+print('\nРезультат:',end=' ')
 for i in palki:
     print(i,end='')
