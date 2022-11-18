@@ -1,1 +1,3 @@
-# TODO здесь писать код
+stroka = input('Введите строку: ')
+
+print('\nРезультат: ',stroka.title())
