@@ -45,4 +45,23 @@ data = {
 }
 
 
-# TODO здесь писать код
+# 1. Вывести списки ключей и значений словаря.
+print('\n1....')
+for i in data:
+    print(f'{i}: {data.get(i)} ')
+# 2. В “ETH” добавить ключ “total_diff” со значением 100.
+print('\n2....')
+data["ETH"]["total_diff"]= "100"
+print(f'ETH: {data["ETH"]}')
+# 3.Внутри “fst_token_info” значение ключа “name” поменять с “fdf” на “doge”.
+print('\n3....')
+data["tokens"][0]["fst_token_info"]["name"]= "doge"
+print(f'fst_token_info: {data["tokens"][0]["fst_token_info"]}')
+# 4.Удалить “total_out” из tokens и присвоить его значение в “total_out” внутри “ETH”.
+print('\n4....')
+data["ETH"]["total_out"]=data["tokens"][0].pop("total_out")
+print(data["ETH"])
+# 5. Внутри "sec_token_info" изменить название ключа “price” на “total_price”.
+print('\n5....')
+data["tokens"][1]["sec_token_info"]["total_price"]= data["tokens"][1]["sec_token_info"].pop("price")
+print(data["tokens"][1]["sec_token_info"])
