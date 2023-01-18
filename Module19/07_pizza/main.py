@@ -1,5 +1,6 @@
 kolvo_order = int(input('Введите количество заказов: '))
 order_dict = {}
+
 for i in range(1,kolvo_order+1):
     print(f'{i}-й заказ: ',end='')
     order = input()
@@ -13,6 +14,7 @@ for i in range(1,kolvo_order+1):
         else:
             order_dict[fio][pizza] += amount
 print()
+
 for fio, order in sorted(order_dict.items()):
     print(f'{fio}:')
     for pizza, amount in sorted(order.items()):

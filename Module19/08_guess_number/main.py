@@ -1,5 +1,6 @@
 max_num = int(input('Введите максимальное число: '))
 all_nums = {x for x in range(max_num+1)}
+
 while True:
     guess = input('\nНужное число есть среди вот этих чисел: ')
     if guess == 'Помогите!':

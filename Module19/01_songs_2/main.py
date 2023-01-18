@@ -9,9 +9,9 @@ violator_songs = {
     'Blue Dress': 4.29,
     'Clean': 5.83
 }
-
 kolvo_music = int(input('Сколько песен выбрать? '))
 time_play = 0
+
 for i in range(1,kolvo_music+1):
     print(f'Название {i}-й песни:',end= ' ')
     name_musik = input()
