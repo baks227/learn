@@ -19,7 +19,6 @@ students = {
     }
 }
 
-
 def first_zadanie(dict):
     id_ages = []
     intersting = []
