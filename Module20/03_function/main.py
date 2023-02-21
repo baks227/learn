@@ -8,5 +8,3 @@ def slicer(cort):
         return cort[cort.index(sym):]
     return cort[cort.index(sym):cort.index(sym,cort.index(sym)+1)+1]
 
-
-
