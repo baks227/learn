@@ -3,7 +3,7 @@ students = {
         'name': 'Bob',
         'surname': 'Vazovski',
         'age': 23,
-        'interests': ['biology, swimming']
+        'interests': ['biology', 'swimming']
     },
     2: {
         'name': 'Rob',
@@ -19,26 +19,24 @@ students = {
     }
 }
 
+def first_zadanie(dict):
+    id_ages = []
+    intersting = []
+    len_fam = 0
+    for id, ages in dict.items():
+        for a in ages.items():
+            if 'age' in a:
+                age = a[1]
+                id_ages.append((id,age))
+            elif 'interests' in a:
+                intersting += a[1]
+            elif 'surname'in a:
+                len_fam += len(a[1])
+    return id_ages,intersting,len_fam
 
-def f(dict):
-    lst = []
-    string = ''
-    for i in dict:
-        lst += (dict[i]['interests'])
-        string += dict[i]['surname']
-    cnt = 0
-    for s in string:
-        cnt += 1
-    return lst, cnt
-
-
-pairs = []
-for i in students:
-    pairs += (i, students[i]['age'])
-
-
-my_lst = f(students)[0]
-l = f(students)[1]
-print(my_lst, l)
+id_ages,intersting,len_fam= first_zadanie(students)
+print('Список пар "ID студента — возраст":', id_ages)
+print('Полный список интересов всех студентов:',intersting)
+print('Общая длина всех фамилий студентов:',len_fam)
 
 # TODO исправить код

@@ -4,4 +4,5 @@ players = {
     ("Rob", "Bobbin"): (12, 8, 2)
 }
 
-# TODO здесь писать код
+new_cortage =[fi+scores for fi,scores in players.items()]
+print(new_cortage)

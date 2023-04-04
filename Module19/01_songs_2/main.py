@@ -9,5 +9,14 @@ violator_songs = {
     'Blue Dress': 4.29,
     'Clean': 5.83
 }
+kolvo_music = int(input('Сколько песен выбрать? '))
+time_play = 0
 
-# TODO здесь писать код
+for i in range(1,kolvo_music+1):
+    print(f'Название {i}-й песни:',end= ' ')
+    name_musik = input()
+    if name_musik in violator_songs:
+        time_play += violator_songs[name_musik]
+    else:
+        print('Ошибка трек не найден!\nДобавьте новый трек в словарь!')
+print(f'\nОбщее время звучания песен: {round(time_play,2)} минуты')

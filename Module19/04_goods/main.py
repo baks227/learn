@@ -24,4 +24,12 @@ store = {
     ],
 }
 
-# TODO здесь писать код
+for name in goods.keys():
+    unit,price,total_price = 0,0,0
+    for product in store[goods[name]]:
+        unit += int(product["quantity"])
+        price = int(product["price"])* int(product["quantity"])
+        total_price += price
+    print(f'{name} - {unit} штук, стоимость {total_price} рублей')
+
+
