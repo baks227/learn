@@ -1,4 +1,3 @@
-import os
 
 num_file = open('numbers.txt','r')
 sum_num = 0
