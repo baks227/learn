@@ -1,6 +1,4 @@
 import os
-def customs_sort(data):
-    return data[2]
 def sort_tour(tour):
     tournament = {}
     for line in tour.split('\n'):
