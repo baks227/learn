@@ -8,4 +8,5 @@ def rec_zen(text):
 
 this_file = open('zen.txt','r')
 data = this_file.read()
+this_file.close()
 rec_zen(data)
