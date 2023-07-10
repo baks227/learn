@@ -22,4 +22,3 @@ while flag:
     else:
         with open("out_file.txt", "a", encoding="utf-8") as out_file:
             out_file.write(f"{number}\n")
-out_file.close()
