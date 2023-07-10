@@ -13,7 +13,7 @@ try:
                 if length < 3:
                     raise BaseException
             except BaseException:
-                print('Ошибка: Длина {} строки меньше 3х символов!'.format(line_count))
+                print('\nОшибка: Длина {} строки меньше 3х символов!'.format(line_count))
 except FileNotFoundError:
     print('Файл не найден!')
 
