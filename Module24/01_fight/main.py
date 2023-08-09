@@ -1,6 +1,6 @@
 import random
 
-class warrior:
+class Warrior:
     def __init__(self,index):
         self.role = 'warrior'
         self.HP = 100
