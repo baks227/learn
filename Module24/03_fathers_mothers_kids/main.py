@@ -20,7 +20,6 @@ class Child:
         print('Ребенок {} сейчас {}'.format(self.name, Child.calm_states[self.calm_state]))
         print('Ребенок {} сейчас {}'.format(self.name, Child.hungry_states[self.hungry_state]))
 
-
 class Parent:
 
     def __init__(self, parent_name, parent_age, children, children_count):
@@ -53,8 +52,6 @@ class Parent:
             child.hungry_state = 0
         else:
             print(f'Папа {self.name} рад, что {child.name} сыт! ')
-
-
 import random
 
 parentName = input('Как зовут родителя? ')
